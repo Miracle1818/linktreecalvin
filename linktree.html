@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Tambahkan ini -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Tambahkan link font -->
+    <title>VYN SKY</title>
+    <style>
+        body {
+            /* Menambahkan efek background RGB */
+            background: linear-gradient(270deg, red, green, blue);
+            background-size: 600% 600%;
+            animation: gradient 15s ease infinite;
+            font-family: 'Roboto', sans-serif; /* Terapkan font pada body */
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            background: white;
+            border-radius: 50px;
+            padding: 50px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: relative; /* Tambahkan ini untuk posisi absolut */
+        }
+
+        .profile {
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .paw-print {
+            background-image: url('D:\vyn_property\linktree\paw.png'); /* Ganti dengan path gambar kaki anjing */
+            background-size: 50px 50px; /* Ukuran gambar kaki anjing */
+            position: absolute;
+            opacity: 0.5; /* Transparansi gambar */
+        }
+
+        /* Menambahkan beberapa posisi acak untuk motif kaki anjing */
+        .paw1 { top: 10%; left: 20%; }
+        .paw2 { top: 30%; left: 70%; }
+        .paw3 { top: 60%; left: 40%; }
+        .paw4 { top: 80%; left: 80%; }
+
+        h1 {
+            
+            font-weight: 700; /* Menggunakan font tebal untuk judul */
+        }
+
+        p {
+            font-weight: 400; /* Menggunakan font normal untuk deskripsi */
+        }
+
+        .btn {
+            transition: transform 0.3s, box-shadow 0.3s; /* Tambahkan transisi untuk efek */
+        }
+
+        .btn:hover {
+            transform: scale(1.05); /* Membesarkan tombol saat hover */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan saat hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="paw-print paw1"></div>
+        <div class="paw-print paw2"></div>
+        <div class="paw-print paw3"></div>
+        <div class="paw-print paw4"></div>
+        <div class="profile">
+            <img src="bonus Vyn_20240924084637.png" alt="Profile Picture" class="profile-img">
+            <h1>VYN SKY</h1>
+            <p>your favorite husky</p>
+        </div>
+        <div class="links">
+            <a href="https://youtube.com/@vyn-pz8vh?si=jNCQfxnZlwaQHYya" class="btn btn-primary">YouTube</a>
+            <a href="https://www.instagram.com/vyn_skye/?__pwa=1#" class="btn btn-danger">Instagram</a>
+            <a href="https://www.tiktok.com/@vyn_miracle?is_from_webapp=1&sender_device=pcubah" class="btn btn-success">TikTok</a>
+            <a href="https://open.spotify.com/user/31i7ezrn72vtmncka3y5notrek6m?si=83eea8f2583144b8" class="btn btn-dark">Spotify</a>
+            <a href="#" class="btn-danger"></a>
+        </div>
+    </div>
+</body>
+</html>
